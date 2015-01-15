@@ -1,4 +1,4 @@
-PROG=ForgetfulAddition
+PROG= 
 make:
 	javac ${PROG}.java
 run:

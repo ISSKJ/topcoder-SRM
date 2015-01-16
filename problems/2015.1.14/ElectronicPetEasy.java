@@ -4,7 +4,6 @@ public class ElectronicPetEasy {
 
     public String isDifficult(int st1, int cost1, int times1, int st2, int cost2, int times2) {
 
-        int sum;
         ArrayList<Integer> pet1 = new ArrayList<Integer>();
         ArrayList<Integer> pet2 = new ArrayList<Integer>();
 

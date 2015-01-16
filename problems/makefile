@@ -1,4 +1,4 @@
-PROG=ElectronicPetEasy
+PROG=ChristmasTreeDecoration
 make:
 	javac ${PROG}.java
 run:

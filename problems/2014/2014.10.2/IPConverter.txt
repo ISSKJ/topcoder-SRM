@@ -1,0 +1,58 @@
+PROBLEM STATEMENT
+A computer connected to the internet is identified by an IP address.  The most common way of displaying an IP address is the dotted quad method: four eight-bit (0-255 in base ten) numbers separated by periods.
+
+Someone has given you a possible IP address, but the periods have been removed, leaving only a string of digits.  Write a class IPConverter with a method possibleAddresses that takes a String ambiguousIP containing the digits and returns a String[] containing all the possible IP addresses that can be formed from those digits by inserting three periods to form a dotted quad.  Sort the elements of the return value lexicographically, using their string ordering (the period character precedes all digit characters).
+
+The numbers in each of the four positions can have any integer value between zero and 255, inclusive.  However, a number may not have leading zeroes.  For example, the digits 1902426 can form 1.90.24.26, 19.0.24.26, 190.2.4.26, and other IP addresses (see Example 0).  However, it cannot form 19.02.4.26.
+
+DEFINITION
+Class:IPConverter
+Method:possibleAddresses
+Parameters:String
+Returns:String[]
+Method signature:String[] possibleAddresses(String ambiguousIP)
+
+
+CONSTRAINTS
+-ambiguousIP will contain between 0 and 50 characters, inclusive.
+-Each character of ambiguousIP will be between '0' and '9', inclusive.
+
+
+EXAMPLES
+
+0)
+"1902426"
+
+Returns: { "1.90.24.26",  "1.90.242.6",  "19.0.24.26",  "19.0.242.6",  "190.2.4.26",  "190.2.42.6",  "190.24.2.6" }
+
+This is the example from the problem statement.
+
+1)
+"000"
+
+Returns: { }
+
+2)
+""
+
+Returns: { }
+
+3)
+"0186290"
+
+Returns: { "0.18.62.90",  "0.186.2.90",  "0.186.29.0" }
+
+4)
+"11111111"
+
+Returns: { "1.1.111.111",  "1.11.11.111",  "1.11.111.11",  "1.111.1.111",  "1.111.11.11",  "1.111.111.1",  "11.1.11.111",  "11.1.111.11",  "11.11.1.111",  "11.11.11.11",  "11.11.111.1",  "11.111.1.11",  "11.111.11.1",  "111.1.1.111",  "111.1.11.11",  "111.1.111.1",  "111.11.1.11",  "111.11.11.1",  "111.111.1.1" }
+
+5)
+"3082390871771742784899852251737850570843857369760"
+
+Returns: { }
+
+6)
+"256255255"
+
+Returns: { "2.56.255.255",  "25.6.255.255",  "25.62.55.255" }

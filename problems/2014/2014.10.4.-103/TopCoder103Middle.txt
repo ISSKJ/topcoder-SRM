@@ -1,0 +1,54 @@
+
+Problem Statement
+????
+An electronic component A has a size (sizeA), a number of inputs (inpA), and a number of outputs (outpA). We can join component A to component B if inpB = outpA. The result is a new component C, where sizeC = sizeA + sizeB, inpC = inpA, and outpC = outpB. The cost of joining A to B includes testing the resulting component, so it depends on the sizes of A and B and on the number of inputs and outputs. We estimate that the cost to join A to B is
+cost = (inpA + sizeA) * connections * (outpB + sizeB)
+where connections equals outpA which equals inpB.
+We have a sequence of n components, each of size 1, that we must assemble into bigger and bigger components until we have assembled them into a single component. This will require us to perform n-1 joins. The order of the components may not be changed, but the order in which we perform the joins should be chosen to minimize the sum of the costs. Create a class Assemble that contains a method minCost that takes connect, the sequence of the number of connections between adjacent components, as input and returns the minimum cost of assembling them into one component.
+The first element in connect is the number of inputs to the first component, and the last element in connect is the number of outputs of the last component. Otherwise, the i-th element is both the number of outputs of component i-1 and the number of inputs of component i.
+Definition
+????
+Class:
+Assemble
+Method:
+minCost
+Parameters:
+int[]
+Returns:
+int
+Method signature:
+int minCost(int[] connect)
+(be sure your method is public)
+Limits
+????
+Time limit (s):
+2.000
+Memory limit (MB):
+64
+Constraints
+-
+The number of elements in connect will be between 3 and 50 inclusive.
+-
+Each element in connect will be between 1 and 100 inclusive.
+Examples
+0)
+
+????
+{19,50,10,39}
+Returns: 19400
+The input represents 3 components, A B and C. A has 19 inputs and 50 outputs. There are only two ways to assemble 3 components:
+Plan 1. join A to B, then AB to C. This will cost (19+1)*50*(10+1) to join A to B, plus (19+2)*10*(39+1) to join AB to C. Total = 19,400
+Plan 2. join B to C, then A to BC. This will cost (50+1)*10*(39+1) to join B to C, plus (19+1)*50*(39+2) to join A to BC. Total = 61,400
+1)
+
+????
+{13,18,24,11,25,100,93,92,79}
+Returns: 407518
+
+2)
+
+????
+{1,1,1,1,1,1,1,1,1}
+Returns: 59
+The nine elements of input represent 8 idendical components. The cheapest way to assemble them is first to join 4 adjacent pairs at a cost of 4 each, then to join two adjacent pairs of 2-component assemblies at a cost of 9 each, and finally to join the remaining pair of 4-component assemblies at a cost of 25. Total cost = 4*4 + 2*9 + 25 = 59.
+

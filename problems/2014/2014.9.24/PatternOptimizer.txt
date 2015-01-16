@@ -1,0 +1,49 @@
+PROBLEM STATEMENT
+Some dictionaries use a word pattern that consists of letters, '?' symbols which each denote exactly one letter, and '*' symbols which each denote zero or more letters.
+Interestingly, some patterns represent the same set of words. For example, "*??*a" and "?*?a" (quotes for clarity only) patterns both represent all words that consist of three or more letters and end with 'a'.
+You will be given a String pattern. Your method should return the shortest pattern that represents the same set of words as the given pattern. Return the lexicographically first in case of tie.
+
+
+DEFINITION
+Class:PatternOptimizer
+Method:optimize
+Parameters:String
+Returns:String
+Method signature:String optimize(String pattern)
+
+
+NOTES
+-Note that '*' comes before '?' in the lexicographical order.
+
+
+CONSTRAINTS
+-pattern will contain between 1 and 50 characters, inclusive. 
+-pattern will contain only letters ('a'-'z', 'A'-'Z'), '?' and '*'.
+
+
+EXAMPLES
+
+0)
+"*??*a"
+
+Returns: "*??a"
+
+1)
+"*b**a*"
+
+Returns: "*b*a*"
+
+2)
+"cla??"
+
+Returns: "cla??"
+
+3)
+"*?*?*?*"
+
+Returns: "*???"
+
+4)
+"T***nd?*"
+
+Returns: "T*nd*?"

@@ -1,0 +1,67 @@
+PROBLEM STATEMENT
+
+
+NOTE: This problem statement contains superscripts that may not display properly if viewed outside of the applet.
+
+
+
+A number which can be represented as pq, where p is a prime number and q is an integer greater than 0, is called a prime power. If q is larger than 1, we call the number a strong prime power. You are given an integer n.  If n is a strong prime power, return an int[] containing exactly two elements.  The first element is p and the second element is q.  If n is not a strong prime power, return an empty int[].
+
+
+DEFINITION
+Class:StrongPrimePower
+Method:baseAndExponent
+Parameters:String
+Returns:int[]
+Method signature:int[] baseAndExponent(String n)
+
+
+CONSTRAINTS
+-n will contain digits ('0' - '9') only.
+-n will represent an integer between 2 and 10^18, inclusive.
+-n will have no leading zeros.
+
+
+EXAMPLES
+
+0)
+"27"
+
+Returns: {3, 3 }
+
+27 = 33. This is a strong prime power.
+
+1)
+"10"
+
+Returns: { }
+
+10 = 2 * 5. This is not a strong prime power.
+
+2)
+"7"
+
+Returns: { }
+
+A prime number is not a strong prime power.
+
+3)
+"1296"
+
+Returns: { }
+
+
+
+4)
+"576460752303423488"
+
+Returns: {2, 59 }
+
+
+
+5)
+"999999874000003969"
+
+Returns: {999999937, 2 }
+
+

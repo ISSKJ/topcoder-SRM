@@ -44,9 +44,9 @@ It is possible: we only have one solid cell at (0, 0, 0).
 
 1)
 
-{"YN","NY"}
-{"YN","NY"}
-{"YN","NY"}
+XY  {"YN","NY"}
+YZ  {"YN","NY"}
+ZX  {"YN","NY"}
 Returns: "Impossible"
 Here it is impossible to make a valid sculpture. Note that you can make all three projections look right by using exactly two cubes: (0,0,0) and (1,1,1). However, this sculpture is not 6-connected.
 

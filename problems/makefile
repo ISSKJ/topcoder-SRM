@@ -1,4 +1,4 @@
-PROG=GreaterGame
+PROG=ShadowSculpture
 make:
 	javac ${PROG}.java
 run:

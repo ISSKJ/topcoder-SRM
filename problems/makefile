@@ -1,4 +1,4 @@
-PROG=ChristmasTreeDecorationDiv2
+PROG=GreaterGame
 make:
 	javac ${PROG}.java
 run:

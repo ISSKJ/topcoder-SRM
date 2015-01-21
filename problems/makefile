@@ -1,4 +1,4 @@
-PROG=ShadowSculpture
+PROG=NamingConvention
 make:
 	javac ${PROG}.java
 run:

@@ -1,4 +1,4 @@
-PROG=GameOfStones
+PROG=ChocolateDividingEasy
 make:
 	javac ${PROG}.java
 run:

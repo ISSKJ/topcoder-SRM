@@ -1,11 +1,9 @@
 Problem Statement
     	
-        Mirosz adores sweets. He has just bought a rectangular bar of chocolate. The bar is divided into a grid of square cells. Different cells may have a different quality. You are given the description of the bar in a String[] chocolate. Each character in chocolate is a digit between '0' and '9', inclusive: the quality of one of the cells.
-
+Mirosz adores sweets. He has just bought a rectangular bar of chocolate. The bar is divided into a grid of square cells. Different cells may have a different quality. You are given the description of the bar in a String[] chocolate. Each character in chocolate is a digit between '0' and '9', inclusive: the quality of one of the cells.
 
 
 Mirosz is now going to divide the chocolate into 9 parts: one for him and one for each of his 8 friends. He will do the division by making four cuts: two horizontal and two vertical ones. Each cut must go between two rows or columns of cells. Each of the 9 parts must be non-empty. The quality of a part is the sum of the qualities of all cells it contains.
-
 
 
 Mirosz is well-mannered and he will let his friends choose their pieces first. His friends are even more addicted to chocolate than he is. Therefore, they will certainly choose the pieces with higher quality first, and Mirosz will be left with the worst of the nine pieces.
@@ -17,10 +15,10 @@ You are given the String[] chocolate. Find the optimal places for the four cuts.
  
 Definition
      	
-Class:	ChocolateDividingEasy
-Method:	findBest
-Parameters:	String[]
-Returns:	int
+Class:	            ChocolateDividingEasy
+Method:	            findBest
+Parameters:	        String[]
+Returns:	        int
 Method signature:	int findBest(String[] chocolate)
 (be sure your method is public)
             

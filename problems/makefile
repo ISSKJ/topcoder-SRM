@@ -1,4 +1,4 @@
-PROG=ChristmasTreeDecorationDiv2
+PROG=ChocolateDividingEasy
 make:
 	javac ${PROG}.java
 run:

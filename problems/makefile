@@ -1,5 +1,5 @@
 JAR_CP='../util/dist/TopcdoerTest-20150202.jar'
-PROG=CatsOnTheLineDiv2
+PROG=TaroCoins
 make:
 	@javac -cp ${JAR_CP}:. ${PROG}.java
 run:

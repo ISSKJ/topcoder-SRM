@@ -1,4 +1,4 @@
-PROG=ChocolateDividingEasy
+PROG=ThePermutationGameDiv2
 make:
 	javac ${PROG}.java
 run:

@@ -1,0 +1,57 @@
+Problem Statement
+
+Cat Taro likes coins. For any non-negative integer K, he has exactly two coins of value 2^K (i.e., two to the power of K).
+
+You are given a long N. Return the number of different ways Taro can represent the value N with coins that he has. (Two representations are considered different if there is a value that occurs a different number of times in the representations.)
+
+
+Definition
+
+Class:	TaroCoins
+Method:	getNumber
+Parameters:	long
+Returns:	long
+Method signature:	long getNumber(long N)
+(be sure your method is public)
+
+
+Notes
+-	The answer will always fit in a signed 64-bit integer.
+
+Constraints
+-	N will be between 1 and 1,000,000,000,000,000,000 (10^18), inclusive.
+
+Examples
+
+0)	
+
+1
+Returns: 1
+The only possible way to represent N in this case is to use one coin of value 1.
+
+1)	
+
+6
+Returns: 3
+The following three representations are possible in this case: {1, 1, 2, 2}, {1, 1, 4} and {2, 4}
+
+2)	
+
+47
+Returns: 2
+
+3)	
+
+256
+Returns: 9
+
+4)	
+
+8489289
+Returns: 6853
+
+5)	
+
+1000000000
+Returns: 73411
+

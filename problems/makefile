@@ -1,5 +1,6 @@
-PROG=ThePermutationGameDiv2
+JAR_CP='../util/dist/TopcdoerTest-20150202.jar'
+PROG=TheKingsRoadsDiv2
 make:
-	javac ${PROG}.java
+	@javac -cp ${JAR_CP}:. ${PROG}.java
 run:
-	java ${PROG}
+	@java -cp ${JAR_CP}:. ${PROG}

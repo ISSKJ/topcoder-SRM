@@ -1,0 +1,74 @@
+// BEGIN CUT HERE
+// PROBLEM STATEMENT
+// 
+A lucky ticket is an integer with exactly 2*n digits (written without leading zeroes), where the sum of the leftmost n digits is equal to the sum of the rightmost n digits.
+
+
+
+You are given a String s, which contains only non-zero digits. Find the longest contiguous substring of s that is a lucky ticket and return its length. If there is no such lucky ticket, return 0 instead.
+
+
+
+DEFINITION
+Class:LuckyTicketSubstring
+Method:maxLength
+Parameters:String
+Returns:int
+Method signature:int maxLength(String s)
+
+
+CONSTRAINTS
+-s will contain between 1 and 50 characters, inclusive.
+-s will contain non-zero digits ('1'-'9') only.
+
+
+EXAMPLES
+
+0)
+"123231"
+
+Returns: 6
+
+The entire string, 123231, is a lucky ticket because the first 3 digits sum up to 1+2+3=6, and the last 3 digits sum up to 2+3+1=6.
+
+1)
+"74233285"
+
+Returns: 4
+
+4233 is the longest lucky ticket here.
+
+2)
+"986561517416921217551395112859219257312"
+
+Returns: 36
+
+
+
+3)
+"1"
+
+Returns: 0
+
+
+
+4)
+"112"
+
+Returns: 2
+
+A lucky ticket must contain an even number of digits.
+
+// END CUT HERE
+import java.util.*;
+import my.util.*;
+
+public class LuckyTicketSubstring {
+
+    public int maxLength(String s) {
+    }
+
+    public static void main(String[] args) {
+        LuckyTicketSubstring obj = new LuckyTicketSubstring();
+    }
+}
